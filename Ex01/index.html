@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Vitor Souza">
+    </head>
+    <body>
+        <h1>Formulário alunos</h1>
+        <form id="alunoForm">
+            <p>
+                Nome: <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                Idade: <input type="number" name="idade" id="idade">
+            </p>
+            <p>
+                Curso: <select name="" id="curso">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </p>
+            <p>
+                Nota Final: <input type="number" name="notafinal" id="notafinal">
+            </p>
+            <input type="submit" value="Cadastrar">
+        </form>
+        <h2>Lista de Alunos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Curso</th>
+                    <th>Nota Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbdody id="tableAlunos"></tbdody>
+        </table>
+        <script src="./table.js"></script>
+    </body>
+</html>
